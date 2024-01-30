@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>random number</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <p class="resault"></p>
-    <h1>Random number</h1>
+    <main id="main">
+      <h1 id="title">Random number</h1>
+      <div class="result_container">
+        <p id="result">1</p>
+      </div>
 
-    <input id="number_input" value="1" type="number" min="0" />
-
-    <button class="generate_btn">generate random number</button>
+      <div id="input_container">
+        <input id="number_input" type="number" min="0" placeholder="Enter a number" />
+        <button class="button generate_btn">Generate random number</button>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

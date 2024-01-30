@@ -1,0 +1,101 @@
+/* Import font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:wght@600;700&display=swap');
+
+/* Base styling */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'inter', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* main */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 10vw;
+}
+
+#title::first-letter {
+  font-family: 'lora', 'Helvetica Neue', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(5, 97, 217);
+}
+
+/* result */
+.result_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 90%;
+}
+
+#result {
+  font-size: 3rem;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+/* input */
+
+#input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+input[type='number'] {
+  width: 95%;
+  padding: 8px 0 8px 8px;
+
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* button */
+.button {
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 97, 217);
+  border: none;
+  border-radius: 5px;
+
+  width: 100%;
+  padding: 12px 0;
+}
+
+.button:hover {
+  background-color: rgb(56, 140, 249);
+  cursor: grab;
+}
