@@ -1,10 +1,15 @@
-const generate_btn = document.querySelector('.generate_btn');
-const result = document.querySelector('resault');
+const btn = document.querySelector('.generate_btn');
+let input = document.querySelector('#number_input').value;
 
-generate_btn.addEventListener('click', random_num);
-
-function random_num() {
-  const input_value = document.getElementById('number_input').value;
-  let num = Math.floor(Math.random() * input_value + 1);
-  console.log(num);
+function generateRandomNumber(max) {
+  return Math.floor(Math.random() * max);
 }
+
+function updateResult() {
+  let rand_num = generateRandomNumber(input);
+
+  let result = document.querySelector('#result');
+  result.innerHTML = rand_num;
+}
+
+btn.addEventListener('click', updateResult);
